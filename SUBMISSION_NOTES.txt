@@ -1,0 +1,7 @@
+Before submission:
+1. Upload this project to a public GitHub repository named ML-Capstone-Project.
+2. Open the notebook in Google Colab and ensure it runs.
+3. Paste the shareable Colab notebook URL into project_report.pdf (the placeholder is intentional; a link cannot be created until the notebook is uploaded).
+4. Check notebook and repository permissions for the grading team.
+
+The PDF report contains computed results from the supplied CSV.

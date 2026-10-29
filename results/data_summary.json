@@ -1,0 +1,35 @@
+{
+  "rows": 20640,
+  "columns": 10,
+  "missing_total": 207,
+  "missing_by_column": {
+    "longitude": 0,
+    "latitude": 0,
+    "housing_median_age": 0,
+    "total_rooms": 0,
+    "total_bedrooms": 207,
+    "population": 0,
+    "households": 0,
+    "median_income": 0,
+    "median_house_value": 0,
+    "ocean_proximity": 0
+  },
+  "numeric_columns": [
+    "longitude",
+    "latitude",
+    "housing_median_age",
+    "total_rooms",
+    "total_bedrooms",
+    "population",
+    "households",
+    "median_income"
+  ],
+  "categorical_columns": [
+    "ocean_proximity"
+  ],
+  "target": "median_house_value",
+  "target_mean": 206855.81690891474,
+  "target_median": 179700.0,
+  "target_min": 14999.0,
+  "target_max": 500001.0
+}

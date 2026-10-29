@@ -1,0 +1,145 @@
+{
+  "dataset": {
+    "rows": 20640,
+    "columns": 10,
+    "missing_total": 207,
+    "missing_by_column": {
+      "longitude": 0,
+      "latitude": 0,
+      "housing_median_age": 0,
+      "total_rooms": 0,
+      "total_bedrooms": 207,
+      "population": 0,
+      "households": 0,
+      "median_income": 0,
+      "median_house_value": 0,
+      "ocean_proximity": 0
+    },
+    "numeric_columns": [
+      "longitude",
+      "latitude",
+      "housing_median_age",
+      "total_rooms",
+      "total_bedrooms",
+      "population",
+      "households",
+      "median_income"
+    ],
+    "categorical_columns": [
+      "ocean_proximity"
+    ],
+    "target": "median_house_value",
+    "target_mean": 206855.81690891474,
+    "target_median": 179700.0,
+    "target_min": 14999.0,
+    "target_max": 500001.0
+  },
+  "regression": {
+    "model": "Linear Regression",
+    "target": "median_house_value",
+    "test_size": 0.2,
+    "MAE": 50670.48923565362,
+    "MSE": 4908290571.346432,
+    "RMSE": 70059.19333925014,
+    "R2": 0.6254382675296266
+  },
+  "classification": {
+    "model": "Logistic Regression",
+    "target_definition": "1 if median_house_value > $179,700; otherwise 0",
+    "threshold_usd": 179700.0,
+    "accuracy": 0.8379360465116279,
+    "precision_class_1": 0.8338122605363985,
+    "recall_class_1": 0.8439166262724188,
+    "f1_class_1": 0.8388340158997832,
+    "confusion_matrix_labels": [
+      "actual_0",
+      "actual_1"
+    ],
+    "confusion_matrix": [
+      [
+        1718,
+        347
+      ],
+      [
+        322,
+        1741
+      ]
+    ],
+    "classification_report": {
+      "0": {
+        "precision": 0.842156862745098,
+        "recall": 0.8319612590799031,
+        "f1-score": 0.8370280146163216,
+        "support": 2065.0
+      },
+      "1": {
+        "precision": 0.8338122605363985,
+        "recall": 0.8439166262724188,
+        "f1-score": 0.8388340158997832,
+        "support": 2063.0
+      },
+      "accuracy": 0.8379360465116279,
+      "macro avg": {
+        "precision": 0.8379845616407482,
+        "recall": 0.837938942676161,
+        "f1-score": 0.8379310152580524,
+        "support": 4128.0
+      },
+      "weighted avg": {
+        "precision": 0.8379865831044616,
+        "recall": 0.8379360465116279,
+        "f1-score": 0.8379305777577415,
+        "support": 4128.0
+      }
+    }
+  },
+  "clustering": {
+    "method": "K-Means",
+    "candidate_k": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "inertia": [
+      135321.58332731487,
+      101808.10526230694,
+      88984.40671660639,
+      81800.37494848993,
+      74456.41968381927,
+      68243.38025301998,
+      63740.606969649234
+    ],
+    "silhouette_by_k": [
+      0.40765523876442683,
+      0.2966433980426635,
+      0.29001994663586445,
+      0.25092853979290364,
+      0.23649574211235458,
+      0.2238358087950359,
+      0.2298265667186959
+    ],
+    "chosen_k_by_highest_sampled_silhouette": 2,
+    "final_sampled_silhouette_score": 0.40765523876442683,
+    "silhouette_sample_size": 2500,
+    "features_used": [
+      "longitude",
+      "latitude",
+      "housing_median_age",
+      "total_rooms",
+      "total_bedrooms",
+      "population",
+      "households",
+      "median_income",
+      "ocean_proximity"
+    ],
+    "note": "Silhouette is estimated on a reproducible random sample for computational efficiency.",
+    "cluster_sizes": {
+      "0": 18277,
+      "1": 2363
+    }
+  }
+}
